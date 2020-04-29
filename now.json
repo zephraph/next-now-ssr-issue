@@ -1,5 +1,10 @@
 {
   "version": 2,
+  "build": {
+    "env": {
+      "BUILDING_FOR_NOW": "true"
+    }
+  },
   "builds": [
     { "src": "index.html", "use": "@now/static" },
     { "src": "apps/package.json", "use": "@now/next" }
