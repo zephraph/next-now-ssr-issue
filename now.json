@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@now/static" },
+    { "src": "apps/package.json", "use": "@now/next" }
+  ],
+  "routes": [{ "src": "/next(.*)", "dest": "apps/$1" }]
+}
