@@ -1,5 +1,9 @@
 # Next Now SSR Bug reproduction
 
+**Note**: This is fixed when tested on vercel 19.2.0. Everything below is out of date and for historical context.
+
+---
+
 This is a simple static + next.js app that specify's a custom now build and routing.
 
 ```

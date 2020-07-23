@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "build": {
     "env": {
       "BUILDING_FOR_NOW": "true"
@@ -9,5 +8,5 @@
     { "src": "index.html", "use": "@now/static" },
     { "src": "apps/package.json", "use": "@now/next" }
   ],
-  "routes": [{ "src": "/next(.*)", "dest": "apps/$1" }]
+  "rewrites": [{ "source": "/next/(.*)", "destination": "/apps/$1" }]
 }
