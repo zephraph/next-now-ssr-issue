@@ -1,7 +1,8 @@
-export const getServerSideProps = (req) => {
+export const getServerSideProps = (context) => {
+  console.log(context);
   return {
     props: {
-      id: req.query.post,
+      id: context.params.post,
     },
   };
 };
